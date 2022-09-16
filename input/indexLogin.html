@@ -5,35 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nutri</title>
-    <link rel="stylesheet" href="input.scss" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
   </head>
-  <body >
   <body class="background">
     <main class="sign-up-window">
       <div class="logo">
-        <img class="logo-img" src="../images/logo-butterfly.jpg">
+        <img class="logo-img" src="../images/logo-butterfly.jpg" />
       </div>
       <h2>Prijavi se</h2>
       <form class="user-name">
         <label for="korisnicko-ime" class="input-heading-text">Korisničko ime*</label>
-        <input  class="input-text" type="text"  required>
+        <input class="input-text" type="text" required />
       </form>
       <form class="password">
         <div class="lozinka-input">
           <label for="lozinka" class="input-heading-text">Lozinka*</label>
-          <input class="input-text" type="text" required>
+          <input class="input-text" type="password" id="password" required />
+          <i class="fa-solid fa-eye" id="eye"></i>
         </div>
         <div class="lozinka-checkbox-linija">
           <div class="checkbox-linija">
-            <input type="checkbox" id="checkbox"> 
+            <input type="checkbox" id="checkbox" />
             <label for="checkbox-tekst" class="checkbox-text">Zapamti me</label>
           </div>
-          <a href="#">Zaboravljena lozinka?</a>
+          <a href="indexPassword.html">Zaboravljena lozinka?</a>
         </div>
       </form>
       <div class="login-dugme">
         <button type="submit" class="login-btn">Prijavi se ></button>
       </div>
     </main>
+    <script src="java.js"></script>
   </body>
 </html>

@@ -1,0 +1,75 @@
+html {
+  max-width: 1920px;
+  max-height: 1080px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.background {
+  background: url("../images/biljke.jpg") center/cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: fixed;
+  z-index: -1;
+  border: 1px solid #707070;
+}
+
+.sign-up-window {
+  background-color: white;
+  margin-top: 11.8rem;
+  margin-bottom: 11.8rem;
+  margin-left: 40.75rem;
+  margin-right: 40.75rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 616px;
+  height: 702px;
+  box-shadow: 0px 3px 12px #0000001a;
+  border-radius: 28px;
+  opacity: 1;
+}
+
+.logo {
+  height: 6.5rem;
+  width: 11rem;
+  z-index: 1;
+  padding: 4rem 14rem 0rem 14rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-img {
+  height: 103px;
+  width: 173px;
+}
+
+h2 {
+  font-size: 24px;
+  padding-top: 1.5rem;
+  margin: 0;
+  text-align: center;
+}
+
+button {
+  width: 14.8rem;
+  height: 4.3rem;
+  border-radius: 35px;
+  margin: 1.3rem 3.6rem;
+  background-color: #68b130;
+  border: none;
+  color: white;
+  font-size: 1.25rem;
+}
