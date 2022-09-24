@@ -1,0 +1,114 @@
+.glavna-tabela {
+  display: flex;
+  flex-direction: column;
+  grid-column-start: 2;
+}
+
+table {
+  border-radius: 30px;
+  table-layout: collapse;
+  width: 100%;
+  border: 1px solid #e9e9e9;
+}
+
+.tabela {
+  background: 0% 0% no-repeat padding-box;
+  margin-top: 2.25rem;
+}
+
+.thead {
+  border-radius: 30px;
+  max-width: 51rem;
+}
+
+.tb-head {
+  border-radius: 30px;
+  background-color: #68b130;
+  color: white;
+}
+
+th,
+td {
+  width: auto;
+  text-align: center;
+  height: 3rem;
+}
+
+.nepar {
+  background-color: white;
+}
+
+.par {
+  background-color: rgb(104, 177, 48, 0.2);
+}
+
+.broj {
+  border-top-left-radius: 30px;
+  text-align: right;
+  padding-left: 1rem;
+  padding-right: 0.5rem;
+  table-layout: fixed;
+  width: 1rem;
+}
+
+.obrisi {
+  text-align: left;
+  border-top-right-radius: 30px;
+  padding-left: 0.5rem;
+}
+
+.prvi-pregled {
+  width: 5.5rem;
+  height: 1.5rem;
+  border-radius: 35px;
+  background-color: #68b130;
+  border: none;
+  color: white;
+  text-align: center;
+  font: normal 0.75rem Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 0;
+}
+
+.kontrolno-merenje {
+  width: 7.8rem;
+  height: 1.5rem;
+  border-radius: 35px;
+  background-color: #68b130;
+  border: none;
+  color: white;
+  text-align: center;
+  font: normal 0.75rem Open Sans;
+  letter-spacing: 0px;
+  color: #ffffff;
+  opacity: 1;
+  padding: 0;
+}
+
+.pogledaj-btn {
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  border: 0;
+  background-color: rgb(104, 177, 48, 0.2);
+}
+
+#eye {
+  opacity: 1;
+}
+
+.kanta-btn {
+  border-radius: 100%;
+  height: 2rem;
+  width: 2rem;
+  border: 0;
+  background-color: rgb(236, 3, 33, 0.2);
+}
+
+.kanta {
+  height: 1rem;
+  width: 1rem;
+  filter: invert(12%) sepia(97%) saturate(7441%) hue-rotate(7deg) brightness(98%) contrast(118%);
+}

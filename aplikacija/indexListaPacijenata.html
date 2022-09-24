@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nutri</title>
+    <link rel="stylesheet" href="main.css" />
+    <link rel="stylesheet" href="tabela.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  </head>
+  <body class="stranica">
+    <header class="main-header">
+      <a href="#" class="moj-profil-link">
+        <img src="../images/userpic.jpg" alt="Moj profil" />
+        <p>Nutricionista 1 ∨</p>
+      </a>
+    </header>
+    <section class="side-nav">
+      <div class="side-nav-bar">
+        <img class="nav-bar-img" src="../images/logo-butterfly.jpg" />
+        <nav class="nav-list">
+          <div class="nav-list-top">
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/pocetna.png" /></button>
+            </div>
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/lista pacijenata.png" /></button>
+            </div>
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/licni podaci.png" /></button>
+            </div>
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/lista obroka.png" /></button>
+            </div>
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/lista namirnica.png" /></button>
+            </div>
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/web.png" /></button>
+            </div>
+          </div>
+          <div class="nav-list-bottom">
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/moj profil.png" /></button>
+            </div>
+            <div class="nav-list-polje">
+              <button class="nav-list-btn"><img class="nav-list-img" src="../images/podesavanja.png" /></button>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="side-nav-button">
+        <button class="button-nav">></button>
+      </div>
+    </section>
+    <main class="glavna-tabela">
+      <h2>Lista pacijenata</h2>
+      <section class="pacijenti">
+        <div class="pacijenti-pretraga">
+          <input class="pretraga" type="text" placeholder="Pretraži pacijente" />
+          <button type="submit" class="pretraga-btn">
+            Pretraga
+            <i class="fa fa-search"></i>
+          </button>
+          <button type="submit" class="ponisti-btn">Poništi pretragu ⨉</button>
+        </div>
+        <button type="submit" class="dodaj-btn">Dodaj pacijenta +</button>
+      </section>
+      <table class="tabela">
+        <thead class="tb-head">
+          <tr class="tr-head">
+            <th class="broj">#</th>
+            <th class="ime">Ime</th>
+            <th class="prezime">Prezime</th>
+            <th class="datum">Datum rođenja</th>
+            <th class="e-mail">E-Mail</th>
+            <th class="poseta">Poslednja Poseta</th>
+            <th class="pregled">Prvi pregled</th>
+            <th class="merenje">Kontrolno Merenje</th>
+            <th class="pogledaj">Pogledaj</th>
+            <th class="obrisi">Obriši</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="nepar">
+            <td>1.</td>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25.1.1987.</td>
+            <td>marko@gmail.com</td>
+            <td><a href="#">16.01.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>2.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>3.</td>
+            <td>Aleksandar</td>
+            <td>Milentijević</td>
+            <td>18.4.1994.</td>
+            <td>aleksandarmilentijevic@gmail.com</td>
+            <td><a href="#">23.05.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>4.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>5.</td>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25.1.1987.</td>
+            <td>marko@gmail.com</td>
+            <td><a href="#">16.01.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>6.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>7.</td>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25.1.1987.</td>
+            <td>marko@gmail.com</td>
+            <td><a href="#">16.01.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>8.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>9.</td>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25.1.1987.</td>
+            <td>marko@gmail.com</td>
+            <td><a href="#">16.01.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>10.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>11.</td>
+            <td>Aleksandar</td>
+            <td>Milentijević</td>
+            <td>18.4.1994.</td>
+            <td>aleksandarmilentijevic@gmail.com</td>
+            <td><a href="#">23.05.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>12.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>13.</td>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25.1.1987.</td>
+            <td>marko@gmail.com</td>
+            <td><a href="#">16.01.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>14.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>15.</td>
+            <td>Aleksandar</td>
+            <td>Milentijević</td>
+            <td>18.4.1994.</td>
+            <td>aleksandarmilentijevic@gmail.com</td>
+            <td><a href="#">23.05.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>16.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>17.</td>
+            <td>Marko</td>
+            <td>Marković</td>
+            <td>25.1.1987.</td>
+            <td>marko@gmail.com</td>
+            <td><a href="#">16.01.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>18.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="nepar">
+            <td>19.</td>
+            <td>Aleksandar</td>
+            <td>Milentijević</td>
+            <td>18.4.1994.</td>
+            <td>aleksandarmilentijevic@gmail.com</td>
+            <td><a href="#">23.05.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+          <tr class="par">
+            <td>20.</td>
+            <td>Jana</td>
+            <td>Nikolić</td>
+            <td>2.11.19994.</td>
+            <td>jana@gmail.com</td>
+            <td><a href="#">14.02.2022.</a></td>
+            <td><button class="prvi-pregled">Prvi pregled</button></td>
+            <td><button class="kontrolno-merenje">Kontrolno merenje</button></td>
+            <td>
+              <button class="pogledaj-btn"><i class="fa-solid fa-eye" id="eye"></i></button>
+            </td>
+            <td>
+              <button class="kanta-btn"><img class="kanta" src="../images/kanta.png" /></button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+  </body>
+</html>
