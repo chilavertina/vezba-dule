@@ -119,6 +119,10 @@ body {
   align-items: center; */
 }
 
+.nav-list-btn-tekst {
+  display: none;
+}
+
 .nav-list-btn:hover {
   background-color: #68b130;
 }
